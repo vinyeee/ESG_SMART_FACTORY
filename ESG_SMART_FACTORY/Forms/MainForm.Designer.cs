@@ -32,41 +32,41 @@
             this.Top_bar = new System.Windows.Forms.Panel();
             this.Title_lbl = new System.Windows.Forms.Label();
             this.Side_bar = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.settings_btn = new System.Windows.Forms.Button();
+            this.settings_pic = new System.Windows.Forms.PictureBox();
             this.Ai_report_btn = new System.Windows.Forms.Button();
-            this.Ai_report_box = new System.Windows.Forms.PictureBox();
+            this.Ai_report_pic = new System.Windows.Forms.PictureBox();
             this.Admin_btn = new System.Windows.Forms.Button();
-            this.Admin_box = new System.Windows.Forms.PictureBox();
+            this.Admin_pic = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.Realtime_ppm_pl = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.Temperature_pl = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.Humidity_pl = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.Threshold_alarm = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.Top_bar.SuspendLayout();
             this.Side_bar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Ai_report_box)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Admin_box)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.settings_pic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Ai_report_pic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Admin_pic)).BeginInit();
             this.Realtime_ppm_pl.SuspendLayout();
             this.Temperature_pl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.Humidity_pl.SuspendLayout();
             this.Threshold_alarm.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // Top_bar
@@ -94,42 +94,43 @@
             // Side_bar
             // 
             this.Side_bar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.Side_bar.Controls.Add(this.button1);
-            this.Side_bar.Controls.Add(this.pictureBox1);
+            this.Side_bar.Controls.Add(this.settings_btn);
+            this.Side_bar.Controls.Add(this.settings_pic);
             this.Side_bar.Controls.Add(this.Ai_report_btn);
-            this.Side_bar.Controls.Add(this.Ai_report_box);
+            this.Side_bar.Controls.Add(this.Ai_report_pic);
             this.Side_bar.Controls.Add(this.Admin_btn);
-            this.Side_bar.Controls.Add(this.Admin_box);
+            this.Side_bar.Controls.Add(this.Admin_pic);
             this.Side_bar.Dock = System.Windows.Forms.DockStyle.Left;
             this.Side_bar.Location = new System.Drawing.Point(0, 86);
             this.Side_bar.Name = "Side_bar";
             this.Side_bar.Size = new System.Drawing.Size(206, 680);
             this.Side_bar.TabIndex = 1;
             // 
-            // button1
+            // settings_btn
             // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button1.Location = new System.Drawing.Point(67, 154);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(125, 50);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Settings";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = true;
+            this.settings_btn.FlatAppearance.BorderSize = 0;
+            this.settings_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.settings_btn.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.settings_btn.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.settings_btn.Location = new System.Drawing.Point(67, 154);
+            this.settings_btn.Name = "settings_btn";
+            this.settings_btn.Size = new System.Drawing.Size(125, 50);
+            this.settings_btn.TabIndex = 5;
+            this.settings_btn.Text = "Settings";
+            this.settings_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.settings_btn.UseVisualStyleBackColor = true;
+            this.settings_btn.Click += new System.EventHandler(this.settings_btn_Click);
             // 
-            // pictureBox1
+            // settings_pic
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(14, 154);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
+            this.settings_pic.BackColor = System.Drawing.Color.Transparent;
+            this.settings_pic.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("settings_pic.BackgroundImage")));
+            this.settings_pic.InitialImage = null;
+            this.settings_pic.Location = new System.Drawing.Point(14, 154);
+            this.settings_pic.Name = "settings_pic";
+            this.settings_pic.Size = new System.Drawing.Size(50, 50);
+            this.settings_pic.TabIndex = 6;
+            this.settings_pic.TabStop = false;
             // 
             // Ai_report_btn
             // 
@@ -144,17 +145,18 @@
             this.Ai_report_btn.Text = "AI Report";
             this.Ai_report_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Ai_report_btn.UseVisualStyleBackColor = true;
+            this.Ai_report_btn.Click += new System.EventHandler(this.Ai_report_btn_Click);
             // 
-            // Ai_report_box
+            // Ai_report_pic
             // 
-            this.Ai_report_box.BackColor = System.Drawing.Color.Transparent;
-            this.Ai_report_box.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Ai_report_box.BackgroundImage")));
-            this.Ai_report_box.InitialImage = null;
-            this.Ai_report_box.Location = new System.Drawing.Point(14, 87);
-            this.Ai_report_box.Name = "Ai_report_box";
-            this.Ai_report_box.Size = new System.Drawing.Size(50, 50);
-            this.Ai_report_box.TabIndex = 4;
-            this.Ai_report_box.TabStop = false;
+            this.Ai_report_pic.BackColor = System.Drawing.Color.Transparent;
+            this.Ai_report_pic.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Ai_report_pic.BackgroundImage")));
+            this.Ai_report_pic.InitialImage = null;
+            this.Ai_report_pic.Location = new System.Drawing.Point(14, 87);
+            this.Ai_report_pic.Name = "Ai_report_pic";
+            this.Ai_report_pic.Size = new System.Drawing.Size(50, 50);
+            this.Ai_report_pic.TabIndex = 4;
+            this.Ai_report_pic.TabStop = false;
             // 
             // Admin_btn
             // 
@@ -169,17 +171,18 @@
             this.Admin_btn.Text = "Admin";
             this.Admin_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Admin_btn.UseVisualStyleBackColor = true;
+            this.Admin_btn.Click += new System.EventHandler(this.Admin_btn_Click);
             // 
-            // Admin_box
+            // Admin_pic
             // 
-            this.Admin_box.BackColor = System.Drawing.Color.Transparent;
-            this.Admin_box.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Admin_box.BackgroundImage")));
-            this.Admin_box.InitialImage = null;
-            this.Admin_box.Location = new System.Drawing.Point(14, 19);
-            this.Admin_box.Name = "Admin_box";
-            this.Admin_box.Size = new System.Drawing.Size(50, 50);
-            this.Admin_box.TabIndex = 2;
-            this.Admin_box.TabStop = false;
+            this.Admin_pic.BackColor = System.Drawing.Color.Transparent;
+            this.Admin_pic.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Admin_pic.BackgroundImage")));
+            this.Admin_pic.InitialImage = null;
+            this.Admin_pic.Location = new System.Drawing.Point(14, 19);
+            this.Admin_pic.Name = "Admin_pic";
+            this.Admin_pic.Size = new System.Drawing.Size(50, 50);
+            this.Admin_pic.TabIndex = 2;
+            this.Admin_pic.TabStop = false;
             // 
             // label1
             // 
@@ -192,6 +195,7 @@
             // 
             // Realtime_ppm_pl
             // 
+            this.Realtime_ppm_pl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(50)))));
             this.Realtime_ppm_pl.Controls.Add(this.label2);
             this.Realtime_ppm_pl.Location = new System.Drawing.Point(232, 116);
             this.Realtime_ppm_pl.Name = "Realtime_ppm_pl";
@@ -219,53 +223,16 @@
             this.Temperature_pl.Size = new System.Drawing.Size(167, 135);
             this.Temperature_pl.TabIndex = 4;
             // 
-            // Humidity_pl
+            // pictureBox2
             // 
-            this.Humidity_pl.Controls.Add(this.label3);
-            this.Humidity_pl.Location = new System.Drawing.Point(809, 116);
-            this.Humidity_pl.Name = "Humidity_pl";
-            this.Humidity_pl.Size = new System.Drawing.Size(154, 135);
-            this.Humidity_pl.TabIndex = 5;
-            // 
-            // Threshold_alarm
-            // 
-            this.Threshold_alarm.Controls.Add(this.pictureBox3);
-            this.Threshold_alarm.Location = new System.Drawing.Point(621, 268);
-            this.Threshold_alarm.Name = "Threshold_alarm";
-            this.Threshold_alarm.Size = new System.Drawing.Size(342, 162);
-            this.Threshold_alarm.TabIndex = 6;
-            // 
-            // panel2
-            // 
-            this.panel2.Location = new System.Drawing.Point(988, 116);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(440, 313);
-            this.panel2.TabIndex = 7;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Location = new System.Drawing.Point(232, 462);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(545, 281);
-            this.panel1.TabIndex = 8;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.label5);
-            this.panel3.Controls.Add(this.panel4);
-            this.panel3.Location = new System.Drawing.Point(809, 453);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(619, 290);
-            this.panel3.TabIndex = 9;
-            // 
-            // panel4
-            // 
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel4.Location = new System.Drawing.Point(364, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(255, 290);
-            this.panel4.TabIndex = 0;
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
+            this.pictureBox2.InitialImage = null;
+            this.pictureBox2.Location = new System.Drawing.Point(18, 42);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(61, 65);
+            this.pictureBox2.TabIndex = 5;
+            this.pictureBox2.TabStop = false;
             // 
             // label4
             // 
@@ -279,6 +246,14 @@
             this.label4.TabIndex = 4;
             this.label4.Text = "온도(°C)";
             // 
+            // Humidity_pl
+            // 
+            this.Humidity_pl.Controls.Add(this.label3);
+            this.Humidity_pl.Location = new System.Drawing.Point(809, 116);
+            this.Humidity_pl.Name = "Humidity_pl";
+            this.Humidity_pl.Size = new System.Drawing.Size(154, 135);
+            this.Humidity_pl.TabIndex = 5;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -291,16 +266,13 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "습도(%)";
             // 
-            // pictureBox2
+            // Threshold_alarm
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
-            this.pictureBox2.InitialImage = null;
-            this.pictureBox2.Location = new System.Drawing.Point(18, 42);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(61, 65);
-            this.pictureBox2.TabIndex = 5;
-            this.pictureBox2.TabStop = false;
+            this.Threshold_alarm.Controls.Add(this.pictureBox3);
+            this.Threshold_alarm.Location = new System.Drawing.Point(621, 268);
+            this.Threshold_alarm.Name = "Threshold_alarm";
+            this.Threshold_alarm.Size = new System.Drawing.Size(342, 162);
+            this.Threshold_alarm.TabIndex = 6;
             // 
             // pictureBox3
             // 
@@ -312,6 +284,42 @@
             this.pictureBox3.Size = new System.Drawing.Size(51, 54);
             this.pictureBox3.TabIndex = 6;
             this.pictureBox3.TabStop = false;
+            // 
+            // panel2
+            // 
+            this.panel2.Location = new System.Drawing.Point(988, 116);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(440, 313);
+            this.panel2.TabIndex = 7;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Location = new System.Drawing.Point(232, 453);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(545, 290);
+            this.panel1.TabIndex = 8;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label6.Location = new System.Drawing.Point(12, 19);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(331, 26);
+            this.label6.TabIndex = 2;
+            this.label6.Text = "Daily Emission (CO2, NH3, C6H6)";
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.label5);
+            this.panel3.Controls.Add(this.panel4);
+            this.panel3.Location = new System.Drawing.Point(809, 453);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(619, 290);
+            this.panel3.TabIndex = 9;
             // 
             // label5
             // 
@@ -325,17 +333,13 @@
             this.label5.TabIndex = 5;
             this.label5.Text = "누적 배출 비율";
             // 
-            // label6
+            // panel4
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label6.Location = new System.Drawing.Point(12, 19);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(151, 26);
-            this.label6.TabIndex = 2;
-            this.label6.Text = "Daily Emission";
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel4.Location = new System.Drawing.Point(364, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(255, 290);
+            this.panel4.TabIndex = 0;
             // 
             // MainForm
             // 
@@ -359,22 +363,22 @@
             this.Top_bar.ResumeLayout(false);
             this.Top_bar.PerformLayout();
             this.Side_bar.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Ai_report_box)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Admin_box)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.settings_pic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Ai_report_pic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Admin_pic)).EndInit();
             this.Realtime_ppm_pl.ResumeLayout(false);
             this.Realtime_ppm_pl.PerformLayout();
             this.Temperature_pl.ResumeLayout(false);
             this.Temperature_pl.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.Humidity_pl.ResumeLayout(false);
             this.Humidity_pl.PerformLayout();
             this.Threshold_alarm.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -395,11 +399,11 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button Admin_btn;
-        private System.Windows.Forms.PictureBox Admin_box;
+        private System.Windows.Forms.PictureBox Admin_pic;
         private System.Windows.Forms.Button Ai_report_btn;
-        private System.Windows.Forms.PictureBox Ai_report_box;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox Ai_report_pic;
+        private System.Windows.Forms.Button settings_btn;
+        private System.Windows.Forms.PictureBox settings_pic;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;

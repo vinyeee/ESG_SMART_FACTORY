@@ -17,6 +17,19 @@ namespace ESG_SMART_FACTORY
             InitializeComponent();
         }
 
-        
+        private void Admin_btn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Ai_report_btn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void settings_btn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
