@@ -16,5 +16,7 @@ namespace ESG_SMART_FACTORY
         {
             InitializeComponent();
         }
+
+        
     }
 }
