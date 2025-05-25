@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.Top_bar = new System.Windows.Forms.Panel();
             this.Title_lbl = new System.Windows.Forms.Label();
             this.Side_bar = new System.Windows.Forms.Panel();
@@ -40,8 +41,12 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.Admin_box = new System.Windows.Forms.PictureBox();
             this.Top_bar.SuspendLayout();
+            this.Side_bar.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Admin_box)).BeginInit();
             this.SuspendLayout();
             // 
             // Top_bar
@@ -68,6 +73,8 @@
             // 
             // Side_bar
             // 
+            this.Side_bar.Controls.Add(this.button1);
+            this.Side_bar.Controls.Add(this.Admin_box);
             this.Side_bar.Dock = System.Windows.Forms.DockStyle.Left;
             this.Side_bar.Location = new System.Drawing.Point(0, 86);
             this.Side_bar.Name = "Side_bar";
@@ -141,6 +148,31 @@
             this.panel4.Size = new System.Drawing.Size(255, 290);
             this.panel4.TabIndex = 0;
             // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.button1.Location = new System.Drawing.Point(67, 19);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(125, 50);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "ADMIN";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // Admin_box
+            // 
+            this.Admin_box.BackColor = System.Drawing.Color.Transparent;
+            this.Admin_box.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Admin_box.BackgroundImage")));
+            this.Admin_box.InitialImage = ((System.Drawing.Image)(resources.GetObject("Admin_box.InitialImage")));
+            this.Admin_box.Location = new System.Drawing.Point(14, 19);
+            this.Admin_box.Name = "Admin_box";
+            this.Admin_box.Size = new System.Drawing.Size(50, 50);
+            this.Admin_box.TabIndex = 2;
+            this.Admin_box.TabStop = false;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -162,7 +194,9 @@
             this.ShowIcon = false;
             this.Top_bar.ResumeLayout(false);
             this.Top_bar.PerformLayout();
+            this.Side_bar.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Admin_box)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -182,6 +216,8 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox Admin_box;
     }
 }
 
