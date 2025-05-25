@@ -29,15 +29,27 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.StripLine stripLine1 = new System.Windows.Forms.DataVisualization.Charting.StripLine();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 50D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint2 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 60D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint3 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 55D);
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint4 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 30D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint5 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 35D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint6 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 40D);
             System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint7 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 10D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint8 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 12D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint9 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 15D);
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint10 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 60D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint11 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 25D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint12 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 15D);
             this.Top_bar = new System.Windows.Forms.Panel();
             this.Title_lbl = new System.Windows.Forms.Label();
             this.Side_bar = new System.Windows.Forms.Panel();
@@ -56,15 +68,15 @@
             this.Humidity_pl = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.Threshold_alarm = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pic_alert = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label6 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label5 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.Top_bar.SuspendLayout();
             this.Side_bar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.settings_pic)).BeginInit();
@@ -75,11 +87,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.Humidity_pl.SuspendLayout();
             this.Threshold_alarm.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_alert)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
             this.SuspendLayout();
             // 
             // Top_bar
@@ -208,7 +220,7 @@
             // 
             // Realtime_ppm_pl
             // 
-            this.Realtime_ppm_pl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(50)))));
+            this.Realtime_ppm_pl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(34)))));
             this.Realtime_ppm_pl.Controls.Add(this.label2);
             this.Realtime_ppm_pl.Location = new System.Drawing.Point(232, 116);
             this.Realtime_ppm_pl.Name = "Realtime_ppm_pl";
@@ -230,6 +242,7 @@
             // 
             // Temperature_pl
             // 
+            this.Temperature_pl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(34)))));
             this.Temperature_pl.Controls.Add(this.pictureBox2);
             this.Temperature_pl.Controls.Add(this.label4);
             this.Temperature_pl.Location = new System.Drawing.Point(621, 116);
@@ -242,7 +255,7 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.InitialImage = null;
-            this.pictureBox2.Location = new System.Drawing.Point(3, 42);
+            this.pictureBox2.Location = new System.Drawing.Point(17, 42);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(55, 65);
             this.pictureBox2.TabIndex = 5;
@@ -262,6 +275,7 @@
             // 
             // Humidity_pl
             // 
+            this.Humidity_pl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(34)))));
             this.Humidity_pl.Controls.Add(this.label3);
             this.Humidity_pl.Location = new System.Drawing.Point(809, 116);
             this.Humidity_pl.Name = "Humidity_pl";
@@ -282,25 +296,27 @@
             // 
             // Threshold_alarm
             // 
-            this.Threshold_alarm.Controls.Add(this.pictureBox3);
+            this.Threshold_alarm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(34)))));
+            this.Threshold_alarm.Controls.Add(this.pic_alert);
             this.Threshold_alarm.Location = new System.Drawing.Point(621, 268);
             this.Threshold_alarm.Name = "Threshold_alarm";
             this.Threshold_alarm.Size = new System.Drawing.Size(342, 162);
             this.Threshold_alarm.TabIndex = 6;
             // 
-            // pictureBox3
+            // pic_alert
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
-            this.pictureBox3.InitialImage = null;
-            this.pictureBox3.Location = new System.Drawing.Point(267, 49);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(51, 54);
-            this.pictureBox3.TabIndex = 6;
-            this.pictureBox3.TabStop = false;
+            this.pic_alert.BackColor = System.Drawing.Color.Transparent;
+            this.pic_alert.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pic_alert.BackgroundImage")));
+            this.pic_alert.InitialImage = null;
+            this.pic_alert.Location = new System.Drawing.Point(267, 49);
+            this.pic_alert.Name = "pic_alert";
+            this.pic_alert.Size = new System.Drawing.Size(51, 54);
+            this.pic_alert.TabIndex = 6;
+            this.pic_alert.TabStop = false;
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(34)))));
             this.panel2.Location = new System.Drawing.Point(988, 116);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(440, 313);
@@ -308,12 +324,71 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(34)))));
             this.panel1.Controls.Add(this.chart2);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Location = new System.Drawing.Point(232, 453);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(545, 290);
             this.panel1.TabIndex = 8;
+            // 
+            // chart2
+            // 
+            this.chart2.BackColor = System.Drawing.Color.Transparent;
+            this.chart2.BorderlineColor = System.Drawing.Color.Transparent;
+            chartArea1.AxisX.LineColor = System.Drawing.Color.White;
+            chartArea1.AxisX.MajorGrid.Enabled = false;
+            chartArea1.AxisX.MajorGrid.IntervalOffset = 0D;
+            chartArea1.AxisX.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea1.AxisX.MajorGrid.LineWidth = 10;
+            chartArea1.AxisX.MajorTickMark.LineColor = System.Drawing.Color.White;
+            stripLine1.BackColor = System.Drawing.Color.White;
+            stripLine1.ForeColor = System.Drawing.Color.Bisque;
+            stripLine1.Interval = 10D;
+            chartArea1.AxisX.StripLines.Add(stripLine1);
+            chartArea1.AxisX.TitleForeColor = System.Drawing.Color.BlanchedAlmond;
+            chartArea1.AxisY.LineColor = System.Drawing.Color.White;
+            chartArea1.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            chartArea1.BackColor = System.Drawing.Color.Transparent;
+            chartArea1.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea1);
+            this.chart2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            legend1.Name = "Legend1";
+            this.chart2.Legends.Add(legend1);
+            this.chart2.Location = new System.Drawing.Point(0, 60);
+            this.chart2.Name = "chart2";
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "CO₂";
+            dataPoint1.AxisLabel = "5/24";
+            dataPoint2.AxisLabel = "5/25";
+            dataPoint3.AxisLabel = "5/26";
+            series1.Points.Add(dataPoint1);
+            series1.Points.Add(dataPoint2);
+            series1.Points.Add(dataPoint3);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "NH3";
+            dataPoint4.AxisLabel = "5/24";
+            dataPoint5.AxisLabel = "5/25";
+            dataPoint6.AxisLabel = "5/26";
+            series2.Points.Add(dataPoint4);
+            series2.Points.Add(dataPoint5);
+            series2.Points.Add(dataPoint6);
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Legend1";
+            series3.Name = "C6H6";
+            dataPoint7.AxisLabel = "5/24";
+            dataPoint8.AxisLabel = "5/25";
+            dataPoint9.AxisLabel = "5/26";
+            series3.Points.Add(dataPoint7);
+            series3.Points.Add(dataPoint8);
+            series3.Points.Add(dataPoint9);
+            this.chart2.Series.Add(series1);
+            this.chart2.Series.Add(series2);
+            this.chart2.Series.Add(series3);
+            this.chart2.Size = new System.Drawing.Size(545, 230);
+            this.chart2.TabIndex = 4;
             // 
             // label6
             // 
@@ -329,6 +404,7 @@
             // 
             // panel3
             // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(34)))));
             this.panel3.Controls.Add(this.chart1);
             this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.panel4);
@@ -336,26 +412,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(619, 290);
             this.panel3.TabIndex = 9;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label5.Location = new System.Drawing.Point(16, 18);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(138, 26);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "누적 배출 비율";
-            // 
-            // panel4
-            // 
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel4.Location = new System.Drawing.Point(364, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(255, 290);
-            this.panel4.TabIndex = 0;
             // 
             // chart1
             // 
@@ -377,50 +433,35 @@
             series4.Label = "#PERCENT";
             series4.Legend = "Legend1";
             series4.Name = "Series1";
+            dataPoint10.AxisLabel = "CO₂";
+            dataPoint11.AxisLabel = "NH₃";
+            dataPoint12.AxisLabel = "C₆H₆";
+            series4.Points.Add(dataPoint10);
+            series4.Points.Add(dataPoint11);
+            series4.Points.Add(dataPoint12);
             this.chart1.Series.Add(series4);
             this.chart1.Size = new System.Drawing.Size(364, 230);
             this.chart1.TabIndex = 6;
             // 
-            // chart2
+            // label5
             // 
-            this.chart2.BackColor = System.Drawing.Color.Transparent;
-            this.chart2.BorderlineColor = System.Drawing.Color.Transparent;
-            chartArea1.AxisX.LineColor = System.Drawing.Color.White;
-            chartArea1.AxisX.MajorGrid.Enabled = false;
-            chartArea1.AxisX.MajorGrid.IntervalOffset = 0D;
-            chartArea1.AxisX.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea1.AxisX.MajorGrid.LineWidth = 10;
-            chartArea1.AxisX.MajorTickMark.LineColor = System.Drawing.Color.White;
-            stripLine1.BackColor = System.Drawing.Color.White;
-            stripLine1.ForeColor = System.Drawing.Color.Bisque;
-            stripLine1.Interval = 10D;
-            chartArea1.AxisX.StripLines.Add(stripLine1);
-            chartArea1.AxisX.TitleForeColor = System.Drawing.Color.BlanchedAlmond;
-            chartArea1.AxisY.LineColor = System.Drawing.Color.White;
-            chartArea1.BackColor = System.Drawing.Color.Transparent;
-            chartArea1.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea1);
-            this.chart2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            legend1.Name = "Legend1";
-            this.chart2.Legends.Add(legend1);
-            this.chart2.Location = new System.Drawing.Point(0, 60);
-            this.chart2.Name = "chart2";
-            this.chart2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "CO₂";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "NH3";
-            series3.ChartArea = "ChartArea1";
-            series3.Legend = "Legend1";
-            series3.Name = "C6H6";
-            this.chart2.Series.Add(series1);
-            this.chart2.Series.Add(series2);
-            this.chart2.Series.Add(series3);
-            this.chart2.Size = new System.Drawing.Size(545, 230);
-            this.chart2.TabIndex = 4;
-            this.chart2.Text = "chart2";
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label5.Location = new System.Drawing.Point(16, 18);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(138, 26);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "누적 배출 비율";
+            // 
+            // panel4
+            // 
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel4.Location = new System.Drawing.Point(364, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(255, 290);
+            this.panel4.TabIndex = 0;
             // 
             // MainForm
             // 
@@ -455,13 +496,13 @@
             this.Humidity_pl.ResumeLayout(false);
             this.Humidity_pl.PerformLayout();
             this.Threshold_alarm.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_alert)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -491,7 +532,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pic_alert;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
