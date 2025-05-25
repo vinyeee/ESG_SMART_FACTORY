@@ -31,5 +31,10 @@ namespace ESG_SMART_FACTORY
         {
 
         }
+
+        private void Realtime_ppm_pl_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
