@@ -45,11 +45,14 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Top_bar.SuspendLayout();
             this.Side_bar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Ai_report_box)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Admin_box)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Top_bar
@@ -76,6 +79,8 @@
             // 
             // Side_bar
             // 
+            this.Side_bar.Controls.Add(this.button1);
+            this.Side_bar.Controls.Add(this.pictureBox1);
             this.Side_bar.Controls.Add(this.Ai_report_btn);
             this.Side_bar.Controls.Add(this.Ai_report_box);
             this.Side_bar.Controls.Add(this.Admin_btn);
@@ -92,11 +97,11 @@
             this.Ai_report_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Ai_report_btn.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Ai_report_btn.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.Ai_report_btn.Location = new System.Drawing.Point(67, 75);
+            this.Ai_report_btn.Location = new System.Drawing.Point(67, 87);
             this.Ai_report_btn.Name = "Ai_report_btn";
             this.Ai_report_btn.Size = new System.Drawing.Size(125, 50);
             this.Ai_report_btn.TabIndex = 3;
-            this.Ai_report_btn.Text = "AI REPORT";
+            this.Ai_report_btn.Text = "AI Report";
             this.Ai_report_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Ai_report_btn.UseVisualStyleBackColor = true;
             // 
@@ -105,7 +110,7 @@
             this.Ai_report_box.BackColor = System.Drawing.Color.Transparent;
             this.Ai_report_box.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Ai_report_box.BackgroundImage")));
             this.Ai_report_box.InitialImage = ((System.Drawing.Image)(resources.GetObject("Ai_report_box.InitialImage")));
-            this.Ai_report_box.Location = new System.Drawing.Point(14, 75);
+            this.Ai_report_box.Location = new System.Drawing.Point(14, 87);
             this.Ai_report_box.Name = "Ai_report_box";
             this.Ai_report_box.Size = new System.Drawing.Size(50, 50);
             this.Ai_report_box.TabIndex = 4;
@@ -121,7 +126,7 @@
             this.Admin_btn.Name = "Admin_btn";
             this.Admin_btn.Size = new System.Drawing.Size(125, 50);
             this.Admin_btn.TabIndex = 1;
-            this.Admin_btn.Text = "ADMIN";
+            this.Admin_btn.Text = "Admin";
             this.Admin_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Admin_btn.UseVisualStyleBackColor = true;
             // 
@@ -203,6 +208,31 @@
             this.panel4.Size = new System.Drawing.Size(255, 290);
             this.panel4.TabIndex = 0;
             // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.button1.Location = new System.Drawing.Point(67, 154);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(125, 50);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Settings";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(14, 154);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -228,6 +258,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Ai_report_box)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Admin_box)).EndInit();
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -251,6 +282,8 @@
         private System.Windows.Forms.PictureBox Admin_box;
         private System.Windows.Forms.Button Ai_report_btn;
         private System.Windows.Forms.PictureBox Ai_report_box;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
