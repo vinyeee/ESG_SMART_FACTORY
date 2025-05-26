@@ -77,6 +77,10 @@
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label5 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.lbl_degree = new System.Windows.Forms.Label();
+            this.lbl_temp = new System.Windows.Forms.Label();
+            this.lbl_humid = new System.Windows.Forms.Label();
+            this.lbl_percent = new System.Windows.Forms.Label();
             this.Top_bar.SuspendLayout();
             this.Side_bar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.settings_pic)).BeginInit();
@@ -243,6 +247,8 @@
             // Temperature_pl
             // 
             this.Temperature_pl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(34)))));
+            this.Temperature_pl.Controls.Add(this.lbl_temp);
+            this.Temperature_pl.Controls.Add(this.lbl_degree);
             this.Temperature_pl.Controls.Add(this.pictureBox2);
             this.Temperature_pl.Controls.Add(this.label4);
             this.Temperature_pl.Location = new System.Drawing.Point(621, 116);
@@ -255,9 +261,9 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.InitialImage = null;
-            this.pictureBox2.Location = new System.Drawing.Point(17, 42);
+            this.pictureBox2.Location = new System.Drawing.Point(0, 42);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(55, 65);
+            this.pictureBox2.Size = new System.Drawing.Size(57, 65);
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
             // 
@@ -267,7 +273,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label4.Location = new System.Drawing.Point(12, 13);
+            this.label4.Location = new System.Drawing.Point(3, 13);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(85, 26);
             this.label4.TabIndex = 4;
@@ -276,6 +282,8 @@
             // Humidity_pl
             // 
             this.Humidity_pl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(34)))));
+            this.Humidity_pl.Controls.Add(this.lbl_percent);
+            this.Humidity_pl.Controls.Add(this.lbl_humid);
             this.Humidity_pl.Controls.Add(this.label3);
             this.Humidity_pl.Location = new System.Drawing.Point(809, 116);
             this.Humidity_pl.Name = "Humidity_pl";
@@ -288,7 +296,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label3.Location = new System.Drawing.Point(13, 13);
+            this.label3.Location = new System.Drawing.Point(3, 13);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(82, 26);
             this.label3.TabIndex = 4;
@@ -451,9 +459,9 @@
             this.label5.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label5.Location = new System.Drawing.Point(16, 18);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(138, 26);
+            this.label5.Size = new System.Drawing.Size(170, 26);
             this.label5.TabIndex = 5;
-            this.label5.Text = "누적 배출 비율";
+            this.label5.Text = "누적 배출 비율(%)";
             // 
             // panel4
             // 
@@ -462,6 +470,52 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(255, 290);
             this.panel4.TabIndex = 0;
+            // 
+            // lbl_degree
+            // 
+            this.lbl_degree.AutoSize = true;
+            this.lbl_degree.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_degree.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_degree.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lbl_degree.Location = new System.Drawing.Point(123, 67);
+            this.lbl_degree.Name = "lbl_degree";
+            this.lbl_degree.Size = new System.Drawing.Size(33, 26);
+            this.lbl_degree.TabIndex = 6;
+            this.lbl_degree.Text = "°C";
+            // 
+            // lbl_temp
+            // 
+            this.lbl_temp.AutoSize = true;
+            this.lbl_temp.Font = new System.Drawing.Font("굴림", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lbl_temp.ForeColor = System.Drawing.Color.LightSalmon;
+            this.lbl_temp.Location = new System.Drawing.Point(68, 71);
+            this.lbl_temp.Name = "lbl_temp";
+            this.lbl_temp.Size = new System.Drawing.Size(61, 24);
+            this.lbl_temp.TabIndex = 7;
+            this.lbl_temp.Text = "25.7";
+            // 
+            // lbl_humid
+            // 
+            this.lbl_humid.AutoSize = true;
+            this.lbl_humid.Font = new System.Drawing.Font("굴림", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lbl_humid.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.lbl_humid.Location = new System.Drawing.Point(36, 69);
+            this.lbl_humid.Name = "lbl_humid";
+            this.lbl_humid.Size = new System.Drawing.Size(61, 24);
+            this.lbl_humid.TabIndex = 8;
+            this.lbl_humid.Text = "61.3";
+            // 
+            // lbl_percent
+            // 
+            this.lbl_percent.AutoSize = true;
+            this.lbl_percent.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_percent.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_percent.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lbl_percent.Location = new System.Drawing.Point(97, 67);
+            this.lbl_percent.Name = "lbl_percent";
+            this.lbl_percent.Size = new System.Drawing.Size(30, 26);
+            this.lbl_percent.TabIndex = 9;
+            this.lbl_percent.Text = "%";
             // 
             // MainForm
             // 
@@ -537,6 +591,10 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
+        private System.Windows.Forms.Label lbl_temp;
+        private System.Windows.Forms.Label lbl_degree;
+        private System.Windows.Forms.Label lbl_percent;
+        private System.Windows.Forms.Label lbl_humid;
     }
 }
 
